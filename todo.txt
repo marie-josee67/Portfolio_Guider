@@ -1,1 +1,15 @@
-A) header: logo, menu, reseaux sociaux, burger
+A) Header: logo, menu, reseaux sociaux, burger
+
+B) Héro: partie gauche et droite
+
+C) A propos:  gaudhe et droite
+
+D) Services: Descriptions et projets
+
+E) Mes compétences: skills
+
+F) Skills
+
+G) Porfolio
+
+I) Contact
