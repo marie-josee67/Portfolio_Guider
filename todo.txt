@@ -13,3 +13,5 @@ F) Skills
 G) Porfolio
 
 I) Contact
+
+F) Footer
