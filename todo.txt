@@ -1,11 +1,11 @@
 arrêt vidéo HTML ==> 1:00:13
 
 
-A) Header: logo, menu, reseaux sociaux, burger
+A) Header: logo, menu, reseaux sociaux, burger ==> fait
 
-B) Héro: partie gauche et droite
+B) Héro: partie gauche et droite ==> fait
 
-C) A propos:  gaudhe et droite
+C) A propos:  gauche et droite ==> fait
 
 D) Services: Descriptions et projets
 
