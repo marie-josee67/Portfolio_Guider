@@ -439,8 +439,30 @@
         
     </section>
 
-    <section id="contact" class="contact">        
-        <h2 class="section-title">Contact:</h2>
+    <section id="contact" class="contact">  
+        <div class="container">
+            <div class="service-header">
+                <h2 class="section-title">Contact:</h2>
+                <p>Voici comment me contacter.</p>
+            </div>
+            <form action="contact.php" class="form">
+                <label for="firstname">
+                    <!-- ^laceholder==> met le mot dans la casse pour l'indication-->
+                <input type="text" name="firstname" id="firstname" placeholder="Nom">
+                </label>
+                <label for="lastname">
+                <input type="text" name="lastname" id="lastname" placeholder="Prénom">
+                </label>
+                <label for="email">
+                <input type="email" name="email" id="email" placeholder="Email">
+                </label>
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+
+                <!-- boutton-->
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+
     </section>
 
     <footer>
