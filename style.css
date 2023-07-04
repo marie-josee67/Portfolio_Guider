@@ -17,6 +17,11 @@ body {
     text-align: justify;
 }
 
+/* décoration des liens */
+a {
+    text-decoration: none;
+}
+
 .list-unstyled{
     list-style: none;
     margin: 0;
@@ -28,8 +33,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
 }
 
 /* syntaxe pour les grand écran  que si on dépasse ici les 750px.*/
@@ -38,11 +41,9 @@ body {
         max-width: 1200px;
         margin: 0  auto; /* 0 en- haut et en-bas et auto à gauche et à droite */
         padding: 2rem; /* soit 2x10px = 20px */
-        background: #148b30;
+        /*background: #148b30;*/
     }
 }
-
-
 
 /* Section */ 
 
@@ -61,3 +62,25 @@ header{
     letter-spacing: 2px; /* espace entre les différentes lettres */
 }
 
+ /* fait disparaitre la navbar et les liens */ 
+.navbar{
+    display: none;
+}
+
+/* les <li> de la navbar */
+
+.header li {
+    display: inline-flex; /* en lignes et flexible */
+    align-items: center;
+    padding: 0 .5rem; /* .5rem on peut l'écrire aussi 0.5rem = 5px. */
+
+}
+
+.header a{
+ color: #333;
+}
+
+/* fait disparaitre le burger */
+.burger{
+    display: none;
+}
