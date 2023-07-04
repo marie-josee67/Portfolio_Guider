@@ -1,6 +1,16 @@
+
+/* l'étoile ==> Permet d'enlever toutes les valeurs par défaults des navigateurs. */
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;/* Permet de redéfinir la font-size de base à 10px, pour n'importe quel navigateur. C'est une valeur fixe à laquelle on peut se baser.*/
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 56px;
+    font-size: 1.6rem;/* est égale à environ 16px */
     color:#555;
-    background: #0aaa65;
+    background: #000;
 }
