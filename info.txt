@@ -1,4 +1,6 @@
 arrêt vidéo HTML ==> fini
+vidéo CSS ==> en cour ==>
+vidéo JS ==> non lu
 
 
 A) Header: logo, menu, reseaux sociaux, burger ==> fait
@@ -21,4 +23,6 @@ F) Footer
 
 Sources:
 
-https//youtu.be/zH_kk8ZzeFo
+https//youtu.be/zH_kk8ZzeFo ==> HTML
+
+https://meyerweb.com/eric/tools/css/reset/ ==> reset css pour le *{}.

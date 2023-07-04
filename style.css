@@ -1,5 +1,5 @@
 
-/* l'étoile ==> Permet d'enlever toutes les valeurs par défaults des navigateurs. */
+/* l'étoile ==> Permet d'enlever toutes les valeurs par défaults des navigateurs==> reset. */
 *{
     box-sizing: border-box;
 }
