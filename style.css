@@ -14,10 +14,22 @@ body {
     font-size: 1.6rem;/* est égale à environ 16px */
     color:#555;
     margin: 0; /* pour reset la valeur par default */
+    text-align: justify;
+}
+
+.list-unstyled{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .container{
     padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
 }
 
 /* syntaxe pour les grand écran  que si on dépasse ici les 750px.*/
@@ -37,6 +49,15 @@ body {
 header{
     /*margin: 3.4rem; /*soit 34px  */
     /*padding: 5.6rem;*/
-    background: #fff;
+    /*background: #fff;*/
     border-bottom: 2px dashed #eee; /* bordure que en-bas */
 }
+
+/* le parent et l'enfant pour + de précision mais surchage le code. */
+.header .logo{
+    font-family: 'poppins', sans-serif; /* famille d'écriture */
+    font-weight: 500;/* gras de la famille d'écriture */
+    font-size: 2rem;
+    letter-spacing: 2px; /* espace entre les différentes lettres */
+}
+
