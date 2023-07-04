@@ -1,3 +1,4 @@
+/* Base */
 
 /* l'étoile ==> Permet d'enlever toutes les valeurs par défaults des navigateurs==> reset. */
 *{
@@ -12,5 +13,30 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.6rem;/* est égale à environ 16px */
     color:#555;
-    background: #000;
+    margin: 0; /* pour reset la valeur par default */
+}
+
+.container{
+    padding: 1rem 2rem;
+}
+
+/* syntaxe pour les grand écran  que si on dépasse ici les 750px.*/
+@media screen and (min-width:750px) {
+    .container{
+        max-width: 1200px;
+        margin: 0  auto; /* 0 en- haut et en-bas et auto à gauche et à droite */
+        padding: 2rem; /* soit 2x10px = 20px */
+        background: #148b30;
+    }
+}
+
+
+
+/* Section */ 
+
+header{
+    /*margin: 3.4rem; /*soit 34px  */
+    /*padding: 5.6rem;*/
+    background: #fff;
+    border-bottom: 2px dashed #eee; /* bordure que en-bas */
 }
