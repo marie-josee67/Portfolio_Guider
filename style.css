@@ -41,6 +41,15 @@ a {
     justify-content: space-between;
 }
 
+/* composent grille*/
+.grid{
+    display: flex;
+    flex-wrap: wrap; /* La propriété flex-wrap indique si les éléments flexibles sont contraints à être disposés sur une seule ligne ou s'ils peuvent être affichés sur plusieurs lignes avec un retour automatique. */
+}
+.grid__item{
+    width: 100%;
+}
+
 /* syntaxe pour les grand écran  que si on dépasse ici les 750px.*/
 @media screen and (min-width:750px) {
     .container{
@@ -162,4 +171,34 @@ header{
     .burger{
         display: none;
     }
+}
+
+
+/* ************************** Héro ************************* */
+
+.hero{
+    background:#5b6c78;
+    color: #fff;
+}
+
+/*La propriété flex-shrink définit le facteur de rétrécissement d'un élément flexible. Si la taille de l'ensemble des éléments flexibles est supérieure à la taille du conteneur, les éléments seront comprimés selon leur facteur flex-shrink. */
+.hero__item{
+    flex:1 0 50%;
+}
+
+@media screen and (min-width:750px) {
+
+}
+
+.toto{
+
+}
+
+@media screen and (min-width:750px) {
+
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
 }

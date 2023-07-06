@@ -26,3 +26,5 @@ Sources:
 https//youtu.be/zH_kk8ZzeFo ==> HTML
 
 https://meyerweb.com/eric/tools/css/reset/ ==> reset css pour le *{}.
+
+https://developer.mozilla.org/fr/docs/Web/CSS/flex-shrink ==> flex-shrink.
