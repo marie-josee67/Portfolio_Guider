@@ -75,7 +75,12 @@ header{
 }
 
 .header a{
- color: #333;
+    color: #333;
+}
+
+/*pseudo classe*/
+.header a:hover{
+    color:red;
 }
 
 /* élément à droite */
@@ -90,7 +95,36 @@ header{
     width: 35px;
     height: 35px;
     cursor: pointer;
+    position: relative;
 }
+
+.burger .bar{
+    display: block;/* pour le faire apparaitre car le span n'est pas un block */
+    width: 22px;
+    height: 3px;
+    background: #333;
+}
+
+/* pseudo classe pour créer les deux barres du burger*/
+.burger .bar::before, .burger .bar::after {
+    display: block;
+    content: "";/* permet de l'afficher sinon il n'apparait pas */
+    width: 22px;
+    height: 3px;
+    background: #333;
+    position: absolute; /* permet de le sortir du flux */
+}
+
+/* barre burger haut*/
+.burger .bar::before{
+    top:0;
+}
+
+/* barre burger bas*/
+.burger .bar::after{
+    bottom:0;
+}
+
 
 /* les icons des réseaux sociaux */
 .socials .icon{
@@ -103,7 +137,7 @@ header{
         display: flex;
     }
     /* fait disparaitre le burger */
-.burger{
-    display: none;
-}
+    .burger{
+        display: none;
+    }
 }
