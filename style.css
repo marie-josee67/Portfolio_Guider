@@ -1,4 +1,6 @@
-/* Base */
+/* CSS pour mobile first: Le mobile first est une stratégie de marketing qui consiste à se concentrer en priorité sur la réalisation de contenus à destination des utilisateurs d'appareils mobiles. */
+
+/* *********************************** Base ************************************* */
 
 /* l'étoile ==> Permet d'enlever toutes les valeurs par défaults des navigateurs==> reset. */
 *{
@@ -30,6 +32,10 @@ a {
 
 .container{
     padding: 1rem 2rem;
+}
+
+/* création class utilitaire  pour une grille*/
+.d-flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,7 +51,7 @@ a {
     }
 }
 
-/* Section */ 
+/* ******************************************* Section **************************************** */ 
 
 header{
     /*margin: 3.4rem; /*soit 34px  */
@@ -96,6 +102,7 @@ header{
     height: 35px;
     cursor: pointer;
     position: relative;
+    margin-left: 1rem; /* soit 10px */
 }
 
 .burger .bar{
@@ -117,18 +124,33 @@ header{
 
 /* barre burger haut*/
 .burger .bar::before{
-    top:0;
+    transform: translateY(-8px);
 }
 
 /* barre burger bas*/
 .burger .bar::after{
-    bottom:0;
+    transform: translateY(8px);
 }
 
+.socials{
+    display: flex;
+}
+
+.socials a {
+    padding: 0 2px;
+}
 
 /* les icons des réseaux sociaux */
 .socials .icon{
     height: 20px;
+}
+
+/* ******************* Toujours mettre les max-width avec les min-width ******************* */
+/* *** max-widht du + grand au + petit, alors que les min-widht sont du + petit au + grand *** */
+
+/* script pour mobile seulement*/
+@media screen and (max-width:749px) {
+
 }
 
 /* faire réapparaitre la Navbar si l'écran est supérieure à 750px*/
