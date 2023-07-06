@@ -188,6 +188,16 @@ header{
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width:749px) {
+    /* cibler une classe qui appartient à une classe en les collent. */
+    .hero__item.left{
+        order:2;
+    }
+
+    .hero__item.right{
+        order:1;
+    }
+}
 
 @media screen and (min-width:750px) {
     /*La propriété flex-shrink définit le facteur de rétrécissement d'un élément flexible. Si la taille de l'ensemble des éléments flexibles est supérieure à la taille du conteneur, les éléments seront comprimés selon leur facteur flex-shrink. */
