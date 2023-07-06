@@ -57,7 +57,6 @@ header{
 /* le parent et l'enfant pour + de précision mais surchage le code. */
 .header .logo{
     font-family: 'poppins', sans-serif; /* famille d'écriture */
-    font-weight: 500;/* gras de la famille d'écriture */
     font-size: 2rem;
     letter-spacing: 2px; /* espace entre les différentes lettres */
 }
@@ -68,7 +67,6 @@ header{
 }
 
 /* les <li> de la navbar */
-
 .header li {
     display: inline-flex; /* en lignes et flexible */
     align-items: center;
@@ -83,4 +81,9 @@ header{
 /* fait disparaitre le burger */
 .burger{
     display: none;
+}
+
+/* les icons des réseaux sociaux */
+.socials .icon{
+    height: 20px;
 }
