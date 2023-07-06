@@ -16,7 +16,7 @@ body {
     font-size: 1.6rem;/* est égale à environ 16px */
     color:#555;
     margin: 0; /* pour reset la valeur par default */
-    text-align: justify;
+    text-align: center;
 }
 
 /* décoration des liens */
@@ -45,6 +45,7 @@ a {
 .grid{
     display: flex;
     flex-wrap: wrap; /* La propriété flex-wrap indique si les éléments flexibles sont contraints à être disposés sur une seule ligne ou s'ils peuvent être affichés sur plusieurs lignes avec un retour automatique. */
+    align-items: center;
 }
 .grid__item{
     width: 100%;
@@ -181,13 +182,18 @@ header{
     color: #fff;
 }
 
-/*La propriété flex-shrink définit le facteur de rétrécissement d'un élément flexible. Si la taille de l'ensemble des éléments flexibles est supérieure à la taille du conteneur, les éléments seront comprimés selon leur facteur flex-shrink. */
 .hero__item{
-    flex:1 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width:750px) {
-
+    /*La propriété flex-shrink définit le facteur de rétrécissement d'un élément flexible. Si la taille de l'ensemble des éléments flexibles est supérieure à la taille du conteneur, les éléments seront comprimés selon leur facteur flex-shrink. */
+    .hero__item{
+        flex:1 0 50%;
+    }
 }
 
 .toto{
