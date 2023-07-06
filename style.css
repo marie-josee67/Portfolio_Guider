@@ -78,12 +78,32 @@ header{
  color: #333;
 }
 
-/* fait disparaitre le burger */
+/* élément à droite */
+.header .right{
+    display: flex;
+    align-items: center; /* alignement vertical */
+}
+
 .burger{
-    display: none;
+    background: none;
+    border: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
 }
 
 /* les icons des réseaux sociaux */
 .socials .icon{
     height: 20px;
+}
+
+/* faire réapparaitre la Navbar si l'écran est supérieure à 750px*/
+@media screen and (min-width:750px) {
+    .navbar{
+        display: flex;
+    }
+    /* fait disparaitre le burger */
+.burger{
+    display: none;
+}
 }
