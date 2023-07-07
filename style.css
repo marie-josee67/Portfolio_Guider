@@ -19,6 +19,10 @@ body {
     text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6{
+    color: #333;
+}
+
 /* décoration des liens */
 a {
     text-decoration: none;
@@ -191,7 +195,9 @@ header{
 }
 
 .hero .title{
-    font-size: 3.5rem;
+    color: inherit; /* hérite la couleur de son parent */
+    font-size: 2.5rem;
+    margin: 1.6rem 0 0 0;
 }
 
 .hero__item{
@@ -199,10 +205,13 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*text-align: center;*/
 }
 
 .hero__item span{
     text-transform: uppercase;
+    font-size: 2rem;
+    margin: 2.5rem;
 }
 
 @media screen and (max-width:749px) {
@@ -214,7 +223,7 @@ header{
     .hero__item.right{
         order:1;
     }
-    
+
     .hero .title{
         font-size: 3rem;
     }
@@ -224,7 +233,13 @@ header{
     /*La propriété flex-shrink définit le facteur de rétrécissement d'un élément flexible. Si la taille de l'ensemble des éléments flexibles est supérieure à la taille du conteneur, les éléments seront comprimés selon leur facteur flex-shrink. */
     .hero__item{
         flex:1 0 50%;
-        /*align-items:flex-start;*/
+        /*align-items:flex-start;
+        text-align: left;*/
+    }
+
+    .hero .title{
+        font-size: 3.5rem;
+        margin: 1.6rem 0 0 0;
     }
 
     .hero__avatar img{
