@@ -46,6 +46,7 @@ a {
     display: flex;
     flex-wrap: wrap; /* La propriété flex-wrap indique si les éléments flexibles sont contraints à être disposés sur une seule ligne ou s'ils peuvent être affichés sur plusieurs lignes avec un retour automatique. */
     align-items: center;
+    justify-content: center;
 }
 .grid__item{
     width: 100%;
@@ -63,6 +64,12 @@ a {
 
 /* ******************************************* Section **************************************** */ 
 
+/* toutes les sections aurons un padding par default */
+section{
+    padding: 5.5rem 0;
+}
+
+/* ******************************************* Site ******************************************* */
 header{
     /*margin: 3.4rem; /*soit 34px  */
     /*padding: 5.6rem;*/
@@ -180,6 +187,11 @@ header{
 .hero{
     background:#5b6c78;
     color: #fff;
+    padding: 1rem 0 0 0;
+}
+
+.hero .title{
+    font-size: 3.5rem;
 }
 
 .hero__item{
@@ -188,14 +200,23 @@ header{
     justify-content: center;
     align-items: center;
 }
+
+.hero__item span{
+    text-transform: uppercase;
+}
+
 @media screen and (max-width:749px) {
     /* cibler une classe qui appartient à une classe en les collent. */
     .hero__item.left{
-        order:2;
+        order:2; /* utilisable uniquement avec le flex box */
     }
 
     .hero__item.right{
         order:1;
+    }
+    
+    .hero .title{
+        font-size: 3rem;
     }
 }
 
@@ -203,6 +224,15 @@ header{
     /*La propriété flex-shrink définit le facteur de rétrécissement d'un élément flexible. Si la taille de l'ensemble des éléments flexibles est supérieure à la taille du conteneur, les éléments seront comprimés selon leur facteur flex-shrink. */
     .hero__item{
         flex:1 0 50%;
+        /*align-items:flex-start;*/
+    }
+
+    .hero__avatar img{
+        max-width: auto;
+        max-height: auto;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
     }
 }
 
