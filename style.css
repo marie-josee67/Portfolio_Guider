@@ -70,11 +70,15 @@ a {
 .grid{
     display: flex;
     flex-wrap: wrap; /* La propriété flex-wrap indique si les éléments flexibles sont contraints à être disposés sur une seule ligne ou s'ils peuvent être affichés sur plusieurs lignes avec un retour automatique. */
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
+    /*border:5px solid purple;*/
 }
 .grid__item{
     width: 100%;
+    /*display: flex;
+    align-items: center;
+    justify-content: space-around;*/
 }
 
 /* syntaxe pour les grand écran  que si on dépasse ici les 750px.*/
@@ -293,13 +297,13 @@ header{
 
 /* *************************** A propos ************************** */
 
-.about{
-    padding-top: 0;
-}
-
 .about .section-title{
     margin-top: 2.8rem; /* soit 28px */
 }
+
+/*li{
+text-align: left;
+}*/
 
 @media screen and (min-width:750px) {
     .about img{
@@ -307,8 +311,18 @@ header{
     }
 }
 
-.toto{
-    color: #555;
+/*  ************************* Services ******************************* */
+
+.services{
+    background: #f5f5f5;
+}
+
+.service__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
 }
 
 @media screen and (min-width:750px) {
