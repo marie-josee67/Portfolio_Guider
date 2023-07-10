@@ -1,5 +1,5 @@
 arrêt vidéo HTML ==> fini
-vidéo CSS ==> en cour ==> 1:41:45
+vidéo CSS ==> en cour ==> 1:53:39
 vidéo JS ==> non lu
 
 

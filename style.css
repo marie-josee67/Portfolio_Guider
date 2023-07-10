@@ -74,16 +74,18 @@ a {
     justify-content: center;
     /*border:5px solid purple;*/
 }
-.grid__item{
-    flex-grow: 1;
-    flex-shrink: 0;
-    width: 100%;
-    padding:1rem;
-    /*display: flex;
-    align-items: center;
-    justify-content: space-around;*/
-}
 
+@media screen and (max-width:749px) {
+    .grid__item{
+        flex-grow: 1;
+        flex-shrink: 0;
+        width: 100%;
+        padding:1rem;
+        /*display: flex;
+        align-items: center;
+        justify-content: space-around;*/
+    }
+}
 /* syntaxe pour les grand écran  que si on dépasse ici les 750px.*/
 @media screen and (min-width:750px) {
     .container{
@@ -373,3 +375,12 @@ text-align: left;
     }
 }
 
+/* ************************* Compétences ou skills *********************************** */
+
+.skills{
+    color:#555
+}
+
+@media screen and (min-width:750px){
+    
+ }
