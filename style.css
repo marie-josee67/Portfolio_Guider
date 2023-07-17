@@ -310,9 +310,15 @@ header{
     margin-top: 2.8rem; /* soit 28px */
 }
 
-/*li{
-text-align: left;
-}*/
+
+li{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    /*text-align:left;*/
+    align-items: center;
+    justify-content: center;
+}
 
 @media screen and (min-width:750px) {
     .about img{
