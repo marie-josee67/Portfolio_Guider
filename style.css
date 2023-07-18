@@ -71,7 +71,7 @@ a {
     display: flex;
     flex-wrap: wrap; /* La propriété flex-wrap indique si les éléments flexibles sont contraints à être disposés sur une seule ligne ou s'ils peuvent être affichés sur plusieurs lignes avec un retour automatique. */
     /*align-items: center;*/
-    justify-content: center;
+    justify-content: space-around;
     /*border:5px solid purple;*/
 }
 
