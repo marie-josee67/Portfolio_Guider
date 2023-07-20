@@ -436,11 +436,16 @@ li{
     padding: 1rem;
 }
 
-
-
-
+/* Modification lorsque l'on click ou pas sur une casse  pour le JS*/
+.portfolio-filters a.active{
+    color: #fff;
+    background: #5b6c78;
+}
 
 @media screen and (min-width:750px){
-    
+    .portfolio .grid__item{
+        max-width: 25%;
+        margin-bottom: 1rem;
+    }
  }
 
