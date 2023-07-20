@@ -421,6 +421,12 @@ li{
     background: #f5f5f5;
 }
 
+/* pour mettre les quatres sous section en 25% de la grid au lieux de 50% */
+.portfolio .grid__item{
+    max-width: 50%;
+    margin-bottom: 0;
+}
+
 .portfolio-filters a {
     background: #eee;
     color: #333;
