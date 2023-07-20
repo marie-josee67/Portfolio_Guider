@@ -388,7 +388,8 @@ li{
 
 /* ************************* Compétences ou skills *********************************** */
 
-/* enlève les marges pour toute cette section  */
+/* ************** grille de gauche *************** */
+
 .skills h4, .skills p {
     margin: 0 0 0.3rem;
 }
@@ -399,6 +400,20 @@ li{
     padding: 0.9rem 2rem;
 }
 
+/* *************** grille de droite **************** */
+
+.skills .progressbar{
+    background: #f5f5f5;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.skills .bar{
+    background: #5b6c78;
+    padding: 1rem;
+}
+
 @media screen and (min-width:750px){
     
  }
+
