@@ -477,6 +477,19 @@ li{
 
 /* *************************** Les projets en card **************************************** */
 
+
+
+/*  Petit écran  */
+@media screen and (max-width:749px) {
+    .card{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .card__image{
+        max-width: 100%;
+        max-height: 80%;
+    }
+}
 .card{
     background: #fff;
     text-transform: uppercase; /* texte en majuscule */
@@ -515,9 +528,6 @@ li{
 .card__overlay{
     /*display: none;*/
     background: rgba(0,0,0,0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     top: 0;
     width: 100%;
@@ -527,16 +537,10 @@ li{
 .card__overlay a{
     font-size: 7.5rem;
     color: #fff;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
-/*  Petit écran  */
-@media screen and (max-width:749px) {
-    .card{
-        max-width: 100%;
-        max-height: 100%;
-    }
-    .card__image{
-        max-width: 100%;
-        max-height: 80%;
-    }
-}
