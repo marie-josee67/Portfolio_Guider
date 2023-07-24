@@ -483,11 +483,16 @@ li{
     margin-top:1rem;
     margin-bottom: 1rem;
     position: relative;
+    overflow: hidden; /* cache ce qui dépasse de la card */
 }
 
 .card__image{
     height: 250px;
     width: 350px;
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;*/
 }
 
 .card__inner{
