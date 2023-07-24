@@ -213,6 +213,10 @@ header{
     display: flex;
 }
 
+.socials li{
+    margin-bottom: 0;
+}
+
 .socials a {
     padding: 0 2px;
 }
@@ -456,7 +460,7 @@ li{
 
 /*  Petit écran  */
 @media screen and (max-width:749px) {
-    .portfolio .grid__item a{
+    .portfolio a{
         font-size: 1.4rem; /* soit 14 px */
     }
 }
@@ -478,6 +482,7 @@ li{
     text-transform: uppercase; /* texte en majuscule */
     margin-top:1rem;
     margin-bottom: 1rem;
+    position: relative;
 }
 
 .card__image{
@@ -503,7 +508,20 @@ li{
 
 /* le petit + */
 .card__overlay{
-    display: none;
+    /*display: none;*/
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card__overlay a{
+    font-size: 7.5rem;
+    color: #fff;
 }
 
 /*  Petit écran  */
