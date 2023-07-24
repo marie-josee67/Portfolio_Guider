@@ -423,7 +423,7 @@ li{
 
 /* pour mettre les quatres sous section l'une a coter de l'autre */
 .portfolio .grid__item{
-    max-width: 33.3333%;
+    max-width: 50%;
     margin-bottom: 0;
 }
 
@@ -449,13 +449,7 @@ li{
     background: #5b6c78;
 }
 
-/*  Grand écran  */
-@media screen and (min-width:750px){
-    .portfolio-filters .grid__item{
-        max-width: 25%;
-        margin-bottom: 1rem;
-    }
- }
+/* *********************** toujours le max-width avant le min-width ******************** */
 
 /*  Petit écran  */
 @media screen and (max-width:749px) {
@@ -464,6 +458,55 @@ li{
     }
 }
 
-.card{
+/*  Grand écran  */
+@media screen and (min-width:750px){
+    .portfolio-filters .grid__item{
+        max-width: 25%;
+    }
+    .portfolio .grid__item{
+        max-width: 33.3333%;
+    }
+ }
 
+/* *************************** Les projets en card **************************************** */
+
+.card{
+    background: #fff;
+    text-transform: uppercase; /* texte en majuscule */
+    margin-top:1rem;
+    margin-bottom: 1rem;
+}
+
+.card__image{
+    height: 250px;
+    width: 350px;
+}
+
+.card__inner{
+    padding: 2rem;
+}
+
+.card__title{
+    margin: 0 0 1rem;
+    font-size: 1.6rem;
+}
+
+.category{
+    margin: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #5b6c78;
+}
+
+/* le petit + */
+.card__overlay{
+    display: none;
+}
+
+/*  Petit écran  */
+@media screen and (max-width:749px) {
+    .card{
+        max-width: 100%;
+        max-height: 100%;
+    }
 }
