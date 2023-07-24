@@ -128,10 +128,13 @@ section{
 
 /* ******************************************* Site ******************************************* */
 header{
+    background: #fff;
     /*margin: 3.4rem; /*soit 34px  */
     /*padding: 5.6rem;*/
     /*background: #fff;*/
     border-bottom: 2px dashed #eee; /* bordure que en-bas */
+    position: sticky; /* La position de la boîte est calculée en fonction du flux normal du document. Dans tous les cas, y compris avec les éléments table, cela n'affecte pas la position des autres éléments. */
+    top: 0;
 }
 
 /* le parent et l'enfant pour + de précision mais surchage le code. */
