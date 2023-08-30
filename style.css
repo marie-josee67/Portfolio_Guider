@@ -546,3 +546,42 @@ li{
     height: 100%;
 }
 
+/* **************************************************** Contact *********************************************************** */
+
+/* ******* formulaire ********* */
+
+.form{
+    max-width: 800px;
+    margin: 4rem auto 0 auto;
+}
+
+/* <input> et <textarea> son les balises */
+.form input, .form textarea{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form textarea{
+    min-height: 200px;
+}
+
+/* ******* bouton ******** */
+
+.form .btn{
+    border: none;
+    background: #333;
+    color: aliceblue;
+    width: auto;
+    min-width: 160px;
+    font-size: 2rem;
+    text-transform: uppercase; /* texte en majuscules */
+}
+
+/* ****** survol du bouton ******** */
+
+.form .btn:hover{
+    cursor: pointer;
+    background: #000;
+}
