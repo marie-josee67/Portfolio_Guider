@@ -527,7 +527,7 @@ li{
 
 /* le petit + */
 .card__overlay{
-    /*display: none;*/
+    display: none; /* fait disparaitre le + */
     background: rgba(0,0,0,0.8);
     position: absolute;
     z-index: 0;
