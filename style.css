@@ -44,6 +44,10 @@ h3,
     font-size: 2.1rem;
 }
 
+ul{
+    padding-left: 2rem;
+}
+
 /* espace entre les <li> en bas pour bien les séparer */
 li{
     margin-bottom: 1rem;
@@ -498,6 +502,8 @@ li{
     margin-bottom: 1rem;
     position: relative;
     overflow: hidden; /* cache ce qui dépasse de la card */
+    box-shadow: 0 0 7px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
 }
 
 .card__image{
@@ -608,11 +614,11 @@ footer .socials {
     text-align: center;
 }
 
-footer .socials li{
+footer .socials li {
     padding: 0.7rem;
 }
 
-footer .socials a{
+footer .socials a {
     color: #fff;
     border: 2px solid #fff;
     border-radius: 50%;
@@ -621,6 +627,11 @@ footer .socials a{
     height: 4.2rem;
     display: flex;
     justify-content: center;
+}
+
+footer .socials a:hover{
+    background: #fff;
+    color: #333;
 }
 
 /* *** Grand Ecran *** */
